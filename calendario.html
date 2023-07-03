@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hora"></p>
+    <script>
+        function hora(){
+const today = new Date();
+const hours = today.getHours();
+const minut=today.getMinutes()
+var tex=document.getElementById("hora")
+tex.textContent=hours+ ":"+minut
+console.log(hours ,minut)
+if(hours==9){
+  if(minut==6){
+    var conte=0
+    let resul=document.getElementById("tex")
+    resul.textContent=conte=+1
+  }
+
+}
+ }
+
+ function loop(){
+    window.requestAnimationFrame(loop)
+    hora()
+ }
+ loop()
+    </script>
+</body>
+</html>
